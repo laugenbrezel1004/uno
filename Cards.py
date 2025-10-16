@@ -16,22 +16,9 @@ class CardSuits(Enum):
     GREEN = 3
     YELLOW = 4
 
-class CardNumbers(Enum):
-    ONE = 1
-    TWO = 2
-    THREE = 3
-    FOUR = 4
-    FIVE = 5
-    SIX = 6
-    SEVEN = 7
-    EIGHT = 8
-    NINE = 9
-
 
 
 class Card:
-
-
 
     def __init__(self, card_type: CardType, suit: CardSuits = None, card_number = None):
         self.suit: CardSuits = suit

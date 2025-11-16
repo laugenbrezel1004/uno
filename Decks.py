@@ -2,7 +2,7 @@ from Cards import Card, CardSuits, CardType
 import random
 
 
-class Deck:
+class Decks:
 
     def __init__(self):
 
@@ -18,6 +18,9 @@ class Deck:
             # get the colored numbers
             for i in range(0, 10):
                 self.holding_deck.append(Card(CardType.NUMBER,suit, i))
+
+            self.holding_deck.extend([Card(CardType.NUMBER,suit, i) for i in range(0, 10)])
+
             for i in range(1, 10):
                 self.holding_deck.append(Card(CardType.NUMBER,suit, i))
 
